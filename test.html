@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K & N Audio File Directory</title>
+    <style>
+        html{
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        :root {
+            --dark-grey: #2E2E2E;
+            --medium-grey: #555555;
+            --light-grey: #A6A6A6;
+            --gold: #c2b067;
+            --soft-gold: #F0D27A;
+        }
+        
+        body {
+            background-color: var(--dark-grey);
+            color: var(--light-grey);
+        }
+        
+        h1, h2, h3 {
+            color: var(--soft-gold);
+            text-align: center;
+        }
+        
+        button {
+            background-color: var(--soft-gold);
+            color: var(--dark-grey);
+            width: 180px;
+            height: 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+          
+        button:hover {
+            background-color: var(--gold);
+        }
+        .audios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .audios div {
+            background-color: #555555;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>K & N Audio File Directory</h1>
+    <div class="audios">
+        <div>
+            <h2>K & N Audio 1</h2>
+            <audio class="audio1">
+                <source src="https://github.com/KhushC-03/khushbot-assets/raw/main/Test.m4a" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+            <button onclick="document.querySelector('.audio1').play()">Play Audio</button>
+        </div>
+        <div>
+            <h2>K & N Audio 2</h2>
+            <audio class="audio2">
+                <source src="https://github.com/KhushC-03/khushbot-assets/raw/main/Test.m4a" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+            <button onclick="document.querySelector('.audio2').play()">Play Audio</button>
+        </div>
+        <div>
+            <h2>K & N Audio 3</h2>
+            <audio class="audio3">
+                <source src="https://github.com/KhushC-03/khushbot-assets/raw/main/Test.m4a" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+            <button onclick="document.querySelector('.audio3').play()">Play Audio</button>
+        </div>
+        <div>
+            <h2>K & N Audio 4</h2>
+            <audio class="audio4">
+                <source src="https://github.com/KhushC-03/khushbot-assets/raw/main/Test.m4a" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+            <button onclick="document.querySelector('.audio4').play()">Play Audio</button>
+        </div>
+        <div>
+            <h2>K & N Audio 5</h2>
+            <audio class="audio5">
+                <source src="https://github.com/KhushC-03/khushbot-assets/raw/main/Test.m4a" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+            <button onclick="document.querySelector('.audio5').play()">Play Audio</button>
+        </div> 
+        <div>
+            <h2>K & N Audio 6</h2>
+            <audio class="audio5">
+                <source src="https://github.com/KhushC-03/khushbot-assets/raw/main/Test.m4a" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+            <button onclick="document.querySelector('.audio5').play()">Play Audio</button>   
+        </div>
+    </div>
+    <script>
+        // Optional: JavaScript to handle more complex interactions with the audio element
+        const audioPlayer = document.querySelector('audio');
+        
+        audioPlayer.addEventListener('play', function() {
+            console.log('Audio started playing');
+        });
+
+        audioPlayer.addEventListener('pause', function() {
+            console.log('Audio paused');
+        });
+
+        audioPlayer.addEventListener('ended', function() {
+            console.log('Audio ended');
+        });
+    </script>
+
+</body>
+</html>
